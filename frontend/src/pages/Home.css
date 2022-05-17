@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+.bigButton {
+  cursor: pointer;
+  height: 7rem;
+  width: clamp(150px, 60vw, 300px);
+  border-radius: 54.5px;
+  background-color: var(--beige);
+  font-size: clamp(1.2rem, 10vw, 3rem);
+  opacity: 0.9;
+}
+
+.smallButton {
+  cursor: pointer;
+  height: 3.5rem;
+  width: clamp(80px, 30vw, 180px);
+  border-radius: 54.5px;
+  background-color: var(--beige);
+  font-size: clamp(0.8rem, 10vw, 1.5rem);
+  opacity: 0.9;
+}
+
+.totoHome {
+  height: 6rem;
+  margin-left: 10rem;
+}

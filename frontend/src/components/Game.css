@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.button {
+  cursor: pointer;
+  padding: var(--text-spacing);
+  margin: 0 0 var(--imagery-spacing) 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(var(--text-spacing) * 20);
+  background-color: var(--beige);
+  box-shadow: 0 0 calc(var(--imagery-spacing) * 0.5)
+    calc(var(--imagery-spacing) * 0.1) #424242;
+  opacity: 0.9;
+  border-radius: 13.62px;
+  font-size: clamp(0.8rem, 5vw, 1.3rem);
+}
+
+.answ-one {
+  background-color: var(--yellow);
+}
+
+.answ-two {
+  background-color: var(--green);
+}
+
+.answ-three {
+  background-color: var(--red);
+}
+
+.answ-four {
+  background-color: var(--brown);
+  color: var(--second-font-color);
+  margin-bottom: 50px;
+}
+
+.question {
+  margin: calc(var(--text-spacing) * 12) calc(var(--text-spacing) * 1)
+    calc(var(--text-spacing) * 2) calc(var(--text-spacing) * 1);
+  padding: var(--text-spacing);
+  background-color: var(--beige);
+  box-shadow: 0 0 calc(var(--imagery-spacing) * 0.5)
+    calc(var(--imagery-spacing) * 0.1) #424242;
+  border-radius: 13.62px;
+  font-size: clamp(0.8rem, 5vw, 1.5rem);
+}
+
+.scoring {
+  font-size: clamp(0.8rem, 5vw, 1.5rem);
+  background-color: var(--beige);
+  width: 120px;
+  height: 50px;
+  border-radius: 50px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.popup {
+  width: 800px;
+  height: 550px;
+  border-radius: 54.5px;
+  background-color: #ffe0b5;
+  padding: 0 20px;
+}
+.popup2 {
+  width: 500px;
+  height: 500px;
+  border-radius: 54.5px;
+  background-color: #ffe0b5;
+  padding: 0;
+}
+
+.swal-text {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Sert à annuler le hover bleu initial du bouton dans la popup swal */
+
+.swal-button:not([disabled]):hover {
+  background-color: var(--brown);
+}
+
+/* Correction bug fond blanc icon success popup swal */
+
+.swal-icon--success__hide-corners {
+  width: 0;
+  height: 0;
+}
+
+/* Correction bug fond blanc icon success popup swal */
+
+.swal-icon--success::after,
+.swal-icon--success::before {
+  display: none;
+}
+
+.swal-button {
+  background-color: var(--brown);
+  padding: 20px 50px 20px 50px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  width: clamp(50px, 10vw, 250px);
+  font-weight: 500;
+}
+
+.swal-footer {
+  text-align: center;
+}
+
+@media screen and (max-width: 420px) {
+  .popup {
+    width: 300px;
+    height: 600px;
+    padding: 0px;
+  }
+  .popup2 {
+    width: 300px;
+    height: 430px;
+    padding: 0px;
+  }
+  .swal-text {
+    font-size: 1.2rem;
+  }
+  .swal-button {
+    padding: 20px 50px 20px 30px;
+  }
+}

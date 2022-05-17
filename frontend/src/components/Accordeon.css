@@ -1,0 +1,38 @@
+.dropdown {
+  gap: 0.5rem;
+}
+
+button {
+  align-items: center;
+  padding: 0.5rem;
+  border: none;
+}
+.thematique {
+  background-color: var(--beige);
+  border-radius: 10px;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  width: 400px;
+  padding: 1.5rem 0;
+}
+
+.drop {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+select {
+  padding: calc(var(--text-spacing) * 1.25);
+  border-radius: 13.62px;
+  background-color: var(--white);
+  color: var(--brown);
+  font-size: medium;
+  outline: none;
+  border: none;
+}
+
+select,
+.thematique,
+button {
+  width: clamp(50px, 80vw, 500px);
+}

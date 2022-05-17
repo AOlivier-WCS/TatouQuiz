@@ -1,36 +1,49 @@
-import Counter from "@components/Counter";
-import logo from "@assets/logo.svg";
+/* eslint-disable import/no-unresolved */
+import Bouton from "@components/Bouton";
+import "../App.css";
+import "./Home.css";
+import prairie from "@assets/prairieChampignons.jpg";
+import { Link } from "react-router-dom";
+import logoToto from "@assets/logo_toto.png";
 
-export default function Home() {
+function Home() {
   return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>Hello Vite + React !</p>
-
-      <Counter />
-
-      <p>
-        Edit <code>App.jsx</code> and save to test HMR updates.
-      </p>
-      <p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        {" | "}
-        <a
-          className="App-link"
-          href="https://vitejs.dev/guide/features.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Vite Docs
-        </a>
-      </p>
-    </header>
+    <div
+      className="App"
+      style={{
+        backgroundImage: `url(${prairie})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        minHeight: "100vh",
+      }}
+    >
+      <div />
+      <div
+        style={{
+          marginTop: "13rem",
+          display: "flex",
+          flexFlow: "column nowrap",
+          alignItems: "center",
+          gap: "4rem",
+        }}
+      >
+        <Link to="/Regles">
+          <Bouton name="Règles" className="smallButton" />
+        </Link>
+        <Link to="/Themes">
+          <Bouton name="JOUER" className="bigButton" />
+        </Link>
+        <Link to="/Contact">
+          <Bouton name="Contact" className="smallButton" />
+        </Link>
+        <img
+          className="totoHome"
+          src={logoToto}
+          alt="logo d'un tatou, mascotte de l'application"
+        />
+      </div>
+    </div>
   );
 }
+
+export default Home;
