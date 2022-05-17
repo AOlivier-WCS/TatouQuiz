@@ -62,14 +62,14 @@ body {
 
 .popup {
   width: 800px;
-  height: 550px;
+  height: 650px;
   border-radius: 54.5px;
   background-color: #ffe0b5;
   padding: 0 20px;
 }
 .popup2 {
   width: 500px;
-  height: 500px;
+  height: 550px;
   border-radius: 54.5px;
   background-color: #ffe0b5;
   padding: 0;
