@@ -23,7 +23,7 @@ export default function Regles() {
           une des <b>thématiques</b> proposées, en fonction de son niveau de{" "}
           <b>difficulté</b>, et le <b>quiz</b> se lancera ensuite.
           <p>
-            🔥 <b>Attention :</b> Tu n&apos;as que 10 secondes par question !
+            🔥 <b>Attention :</b> Tu n&apos;as que 15 secondes par question !
           </p>
           N&apos;hésite pas à cliquer sur notre tatou pour revenir à la page
           d&apos;accueil !

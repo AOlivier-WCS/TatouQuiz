@@ -20,7 +20,7 @@ import { useState } from "react";
 
 function App() {
   const [score, setScore] = useState(0);
-  const [count, setCount] = useState(10);
+  const [count, setCount] = useState(15);
   const [quiz, setQuiz] = useState("");
   const [difficulte, setDifficulte] = useState("");
   return (

@@ -40,7 +40,7 @@ export default function Game() {
       )
         .then(() => setQuestionNumber(questionNumber + 1))
         .then(() => getQuestion())
-        .then(() => setCount(10));
+        .then(() => setCount(15));
     }
     if (count === 0 && questionNumber === 10) {
       setCount(null);
@@ -85,7 +85,7 @@ export default function Game() {
 ${questions.anecdote}`,
         { icon: "success", className: "popup" }
       )
-        .then(() => setCount(10))
+        .then(() => setCount(15))
         .then(() => setQuestionNumber(questionNumber + 1))
         .then(() => setScore(score + 1))
         .then(() => getQuestion());
@@ -109,7 +109,7 @@ ${questions.réponse}`,
           className: "popup2",
         }
       )
-        .then(() => setCount(10))
+        .then(() => setCount(15))
         .then(() => setQuestionNumber(questionNumber + 1))
         .then(() => getQuestion());
     }
@@ -180,7 +180,7 @@ ${questions.anecdote}`,
 
   useEffect(() => {
     setScore(0);
-    setCount(10);
+    setCount(15);
     setQuestionNumber(questionNumber + 1);
     getQuestion();
   }, []);
